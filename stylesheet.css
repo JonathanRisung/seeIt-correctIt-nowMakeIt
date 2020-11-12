@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 3em;
+    text-align: center;
+}
+
+
+nav ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+nav ul li{
+    float: right;
+    height: 3em;
+}
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover{
+    background-color: firebrick;
+    color: whitesmoke;
+}
+
+nav img{
+    height: 3em;
+}
+
+.imgStudent{
+    width: 100%;
+}
+
+main{
+    align-content: center;
+    text-align: center;
+}
+.main h1 a{
+    background-color: firebrick;
+    color: whitesmoke;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.main h1 a:hover{
+    background-color: crimson;
+}
+
+.announceEvent{
+    display: grid;
+    grid-template-areas: "object1 object2";
+}
+.announceEvent ul{
+    list-style-type: none;
+}
+.announceEvent li a{
+    background-color: whitesmoke;
+    padding: 14px 25px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 70%;
+}
+.announceEvent li a:hover{
+    background-color: firebrick;
+    color: whitesmoke;
+}
+.announce{
+    grid-area: object1;
+}
+.event{
+    grid-area: object2;
+}
+
+.articles{
+    display: grid;
+    grid-template-areas:
+    "a1 a2 a3"
+    "a4 a5 a6"
+    ;
+    grid-gap: 0;
+}
+.a1{
+  grid-area: a1;
+}
+.a2{
+    grid-area: a2;
+}
+.a3{
+    grid-area: a3;
+}
+.a4{
+    grid-area: a4;
+}
+.a5{
+    grid-area: a5;
+}
+.a6{
+    grid-area: a6;
+}
+
+
+footer{
+    background-color: grey;
+    display: grid;
+    grid-template-areas:
+    "adress tlf"
+    "cp cp"
+    ;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+.socials li{
+    display: inline;
+}
+.adress{
+    grid-area: adress;
+}
+.tlf{
+    grid-area: tlf;
+}
+.rights{
+    grid-area: cp;
+}
+
+
+@media screen and (max-width: 1100px){
+    body{
+        margin-top: 7em;
+    }
+    nav ul li{
+        width: 20%;
+        height: 3.5em;
+    }
+
+    .main h1{
+        font-size: smaller;
+    }
+
+    .articles{
+        grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+        ;
+    }
+}
